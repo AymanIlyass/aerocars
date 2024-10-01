@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+<body onload="loadRentRequest()">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="../img/icon.png" width="150px">
+
+            <!-- Navigation Links on the Right Side -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">DASHBOARD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vehicals.html">ADD VEHICLE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #0055ff">RENT REQUEST</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customerdetails.html">CUSTOMER DETAILS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="driverdetails.html">MANAGE DRIVER</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <section>
+        <div class="container">
+            <form id="driverForm">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group mb-3">
+                            <label for="rentRequestDriver" class="fw-bold">Driver</label>
+                            <input type="text" class="form-control" id="rentRequestDriver" name="driver" placeholder="Enter your address" required >
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="rentRequestCarRegNo" class="fw-bold">Car Reg no</label>
+                            <input type="text" class="form-control" id="rentRequestCarRegNo" name="driver" placeholder="Enter your address" required >
+                        </div>
+
+                    </div>
+                    <div class="col-md-4" >
+                        <div>
+                            <div class="form-group mb-3">
+                                <label for="rentRequestCustomer" class="fw-bold">Customer Id</label>
+                                <input type="text" class="form-control" id="rentRequestCustomer" name="customer" placeholder="Choose a password" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group mb-3">
+                                <label for="loosDamage" class="fw-bold">loos Damage</label>
+                                <input type="text" class="form-control" id="loosDamage" name="rentRequestRentId" placeholder="loos Damage" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" >
+                        <div>
+                            <div class="form-group mb-3">
+                                <label for="rentRequestRentId" class="fw-bold">Rent Id</label>
+                                <input type="text" class="form-control" id="rentRequestRentId" name="rentRequestRentId" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary fw-bold" id="acceptRentRequest">Accept</button>
+                <button type="button" class="btn btn-primary fw-bold" id="driverDelete">Reject</button>
+                <button type="button" class="btn btn-primary fw-bold" id="driverUpdate">Return</button>
+                <button type="button" class="btn btn-primary fw-bold" id="updateRent">Update</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="rentRequestTable">
+
+
+        <div class="container">
+
+
+            <h2>Rent Information</h2>
+            <table class="table table-bordered" id="requestTable">
+                <thead>
+                <tr>
+                    <th>Rent ID</th>
+                    <th>Car ID</th>
+                    <th>Customer ID</th>
+                    <th>Driver ID</th>
+                    <th>Pick Date</th>
+                    <th>Pick Place</th>
+                    <th>Return Time</th>
+                    <th>Return place</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+                </thead>
+                <tbody id="rentRequestTableBody">
+                <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+
+<footer></footer>
+<script src="../bootstrap/js/jquery-3.6.1.min.js"></script>
+<script src="../controller/car.js"></script>
+<script src="../controller/url.js"></script>
+<script src="../controller/rentRequest.js"></script>
+
+
+</body>
+</html>
