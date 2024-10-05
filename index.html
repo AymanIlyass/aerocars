@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <!-- Bootstrap CSS for responsiveness -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background-image: url('car-rental-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .hero p {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .about {
+            padding: 50px 0;
+            text-align: center;
+            background: linear-gradient(#663004,#ffffff);
+        }
+        .about h2 {
+            margin-bottom: 30px;
+        }
+        .cars-section {
+            padding: 50px 0;
+            background: linear-gradient(#ffffff,#663004);
+        }
+        .cars-section h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .car-card {
+            margin-bottom: 30px;
+        }
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .contact-section {
+            padding: 50px 0;
+            background: linear-gradient(#663004,#ffffff);
+            text-align: center;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+        }
+        .whatsapp-button i {
+            margin-right: 0;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Rent Your Dream Car</h1>
+            <p>Fast, reliable, and affordable car rentals.</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a leading car rental service provider offering a wide range of vehicles for all your travel needs. From luxury sedans to economical compact cars, we have the right vehicle for you.</p>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="cars-section">
+        <div class="container">
+            <h2>Our Fleet</h2>
+            <div class="row">
+                <!-- Car 1 -->
+                <div class="col-md-4 car-card">
+                    <div class="card">
+                        <img src="luxury-car.jpg" class="card-img-top" alt="Luxury Car">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Car</h5>
+                            <p class="card-text">Experience comfort and style with our premium luxury cars.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car 2 -->
+                <div class="col-md-4 car-card">
+                    <div class="card">
+                        <img src="suv-car.jpg" class="card-img-top" alt="SUV Car">
+                        <div class="card-body">
+                            <h5 class="card-title">SUV</h5>
+                            <p class="card-text">Our SUVs are perfect for long trips and group travel.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car 3 -->
+                <div class="col-md-4 car-card">
+                    <div class="card">
+                        <img src="compact-car.jpg" class="card-img-top" alt="Compact Car">
+                        <div class="card-body">
+                            <h5 class="card-title">Compact Car</h5>
+                            <p class="card-text">Affordable and fuel-efficient compact cars for city driving.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to make a booking, feel free to contact us on WhatsApp.</p>
+            <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button with Icon -->
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- Font Awesome for WhatsApp icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
